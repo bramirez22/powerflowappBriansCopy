@@ -1,17 +1,34 @@
+## Milestone
+
+- [ ] M0
+- [ ] M1
+- [ ] M2
+- [ ] M3
+- [ ] M4
+- [ ] M5
+- [ ] Final
+
 ## Summary
 
 -
 
-## Why this change
+## Scope
+
+- Requirement(s) addressed:
+- Files/modules impacted:
+
+## Validation
 
 -
 
-## How to test
+## AI Usage (if any)
 
--
+- [ ] No AI used
+- [ ] AI used and logged in `docs/ai-usage/`
 
 ## Checklist
 
-- [ ] Linked issue (if applicable)
+- [ ] Linked issue
 - [ ] Tests added/updated
-- [ ] Docs/assumptions updated
+- [ ] Docs/checklists updated
+- [ ] Assumptions and equations are documented

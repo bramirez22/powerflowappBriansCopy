@@ -1,10 +1,20 @@
 ---
-name: Bug report
-about: Report incorrect behavior
+name: Numerical/functional bug
+about: Report incorrect solver or UI behavior
 title: "bug: "
 labels: [bug]
 assignees: []
 ---
+
+## Area
+
+- [ ] Parser
+- [ ] Y-bus
+- [ ] GS
+- [ ] NR
+- [ ] Line flow
+- [ ] Short-circuit
+- [ ] UI/export
 
 ## Observed behavior
 
@@ -20,6 +30,8 @@ assignees: []
 2.
 3.
 
-## Environment
+## Evidence
 
--
+- Input file:
+- Output snippet/screenshot:
+- Tolerance/iterations/config:

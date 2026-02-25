@@ -1,0 +1,260 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww28600\viewh16380\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Group Project\
+\
+Course: EE 4310 - Power Systems Analysis\
+\
+Instructor: Dr. Arash Jamehbozorg\
+\
+Project Overview\
+\
+In this semester-long project, students will design and implement a complete Power System Analysis\
+\
+Application capable of performing:\
+\
+1. Y-bus matrix formation\
+\
+2. Power flow analysis using:\
+\
+\'95Gauss\'96Seidel (GS) method\
+\
+\'95Newton\'96Raphson (NR) method\
+\
+3.Short-circuit analysis, including:\
+\
+\'95Three-phase fault analysis\
+\
+\'95Symmetrical component-based fault analysis\
+The application must include a graphical or web-based user interface (UI) that allows a user to:\
+\
+\'95Load a system description from a text file,\
+\
+\'95Select analysis type and solver parameters,\
+\
+\'95Execute the analysis,\
+\
+\'95Display and export results.\
+\
+Students are required to use AI-assisted coding tools as part of the development workflow and must document how AI was used.\
+\
+The IEEE 14-bus test system shall be used as the primary validation and demonstration system for both power flow and short-circuit analysis.\
+\
+Functional Requirements\
+\
+1. Input and Data Handling\
+\
+The application must:\
+\
+\'95 Accept a plain-text system definition file.\
+\
+\'95 Support bus, branch, and generator data.\
+\
+\'95 Operate entirely in the per-unit system.\
+\
+2. Y-bus Formation\
+\
+Students must:\
+\
+\'95 Construct Y-bus using standard nodal admittance formulation.\
+\
+\'95 Include line charging susceptance and transformer tap ratios.\
+\
+\'95Verify correctness using small test systems.\
+\
+3. Power Flow Analysis\
+\
+Gauss\'96Seidel Method\
+\
+\'95Implement complex-form GS iteration.\
+\
+\'95Handle Slack, PV, and PQ bus types.\
+\
+\'95Allow configurable tolerance and maximum iteration count.\
+\
+\'95Display iteration history and convergence behavior.\
+\
+Newton\'96Raphson Method\
+\
+\'95Implement full NR method (polar or rectangular form).\
+\
+\'95Form and update the Jacobian matrix at each iteration.\
+\
+\'95Compute mismatch vector and convergence norm.\
+\
+\'95Compare performance (iterations and speed) against GS.\
+\
+4. Line Flow and Power Balance\
+\
+\'95Compute line power flows and losses.\
+\
+\'95Verify power balance: \uc0\u931 Pgen-\uc0\u931 load\uc0\u8722 \u931 loss\u8776 0.\
+\
+5. Short-Circuit Analysis\
+\
+Students must implement:\
+\
+\'95Three-phase (balanced) fault calculation.\
+\
+\'95Symmetrical component formulation.\
+\
+\'95Sequence network modeling.\
+\
+\'95Fault current and post-fault bus voltage computation.\
+\
+Generator subtransient reactances must be incorporated.\
+\
+2 User Interface Requirements\
+\
+The UI must allow users to:\
+\
+\'95Upload or select a system input file.\
+\
+\'95Select solver (GS or NR).\
+\
+\'95Specify tolerance and maximum iterations.\
+\
+\'95Select fault location and type.\
+\
+\'95Display results in tabular form.\
+\
+\'95Export results to CSV or text format.\
+\
+The UI may be desktop-based or web-based.\
+\
+Recommended Technology Stacks\
+\
+Students may choose an appropriate stack. Recommended options include:\
+\
+\'95MATLAB\
+(recommended for numerical stability and matrix operations; App Designer may be used or UI)\
+\
+\'95Python (NumPy/SciPy + Streamlit/Flask)\
+\
+\'95Go, C++, or Rust (with appropriate UI framework)\
+\
+The choice of stack must be justified in the project proposal.\
+\
+AI-Assisted Development Requirement\
+\
+Students are required to use AI coding tools to assist development.\
+\
+Each team must submit:\
+\
+\'95A one-page AI usage log,\
+\
+\'95Example prompts used,\
+\
+\'95A description of how the generated code was verified or modified.\
+\
+All numerical methods must be understood and defensible during oral questioning.\
+\
+Milestones and Deliverables\
+\
+Milestone 0: Proposal (Week 7) \'96 5%\
+\
+\'95Team members and roles\
+\
+\'95Selected technology stack\
+\
+\'95Development plan\
+\
+3 Milestone 1: Parser and Y\
+bus\
+(Week 8) \'96 10%\
+\
+\'95Working parser\
+\
+\'95Correct Y bus construction\
+\
+\'95Validation using a small test system\
+\
+Milestone 2: Gauss\'96Seidel Implementation (Week 9) \'96 15%\
+\
+\'95Functional GS solver\
+\
+\'95Convergence demonstration\
+\
+\'95Iteration reporting\
+\
+Milestone 3: Newton\'96Raphson Implementation (Week 11) \'96 20%\
+\
+\'95Complete NR solver\
+\
+\'95Jacobian implementation\
+\
+\'95Comparison of GS and NR\
+\
+Milestone 4: UI and Line Flow Reporting (Week 12) \'96 15%\
+\
+\'95Functional UI\
+\
+\'95Line flow calculations\
+\
+\'95Export functionality\
+\
+Milestone 5: Short-Circuit Analysis (Week 14) \'96 20%\
+\
+\'95Three-phase fault implementation\
+\
+\'95Symmetrical component implementation\
+\
+\'95Fault results displayed in UI\
+\
+Final Submission (Week 15) \'96 15%\
+\
+\'95Complete working application\
+\
+\'95Technical report (6\'9610 pages)\
+\
+\'95AI usage log\
+\
+\'95Demonstration using IEEE 14-bus system\
+\
+Testing Requirement\
+\
+All teams must demonstrate:\
+\
+\'95Correct power flow results for the IEEE 14-bus system.\
+\
+\'95Correct three-phase fault current at a selected bus.\
+\
+\'95Reasonable convergence tolerance (e.g., 10\uc0\u8722 6 per unit).\
+\
+4 Grading Breakdown\
+\
+\'95Proposal: 5%\
+\
+\'95Y bus: 10%\
+\
+\'95Gauss\'96Seidel: 15%\
+\
+\'95Newton\'96Raphson: 20%\
+\
+\'95UI and Reporting: 15%\
+\
+\'95Short-Circuit Analysis: 20%\
+\
+\'95Final Report and Demonstration: 15%\
+\
+Academic Integrity\
+\
+While AI-assisted coding is required, all students must understand and be able to explain their implemen-\
+\
+tation. Any team member may be asked to derive equations, explain algorithm steps, or interpret numerical\
+\
+results.\
+\
+Deliver a professional-grade engineering tool.\
+\
+Correctness, robustness, and clarity matter.\
+\
+5\
+\
+}

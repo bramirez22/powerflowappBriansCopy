@@ -1,16 +1,26 @@
 ---
-name: Feature request
-about: Propose a new capability or enhancement
-title: "feat: "
+name: Milestone task
+about: Create a scoped task aligned to project milestones
+title: "task: "
 labels: [enhancement]
 assignees: []
 ---
 
-## Problem
+## Milestone
+
+- [ ] M0
+- [ ] M1
+- [ ] M2
+- [ ] M3
+- [ ] M4
+- [ ] M5
+- [ ] Final
+
+## Requirement to satisfy
 
 -
 
-## Proposed solution
+## Proposed implementation
 
 -
 
