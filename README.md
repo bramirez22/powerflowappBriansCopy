@@ -61,6 +61,14 @@ Detailed checklists are in `docs/milestones/`.
 4. Require reviewer approval before merge.
 5. Update milestone checklist when task is complete.
 
+## Current M0 Working Decision
+
+- Preferred implementation for v1: Python solver backend + Python web UI.
+- Rationale: lowest integration risk and best cross-platform collaboration speed.
+- See:
+  - `docs/reports/proposal.md`
+  - `docs/architecture/stack_decision.md`
+
 ## Definition of Done
 
 - Functionality implemented and reviewed via PR.
