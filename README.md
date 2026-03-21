@@ -80,3 +80,17 @@ Detailed checklists are in `docs/milestones/`.
 ## Project Spec
 
 Place the course project specification in `docs/spec/` (or keep the original in root and reference it there).
+
+## M2 Quick Run
+
+Use these commands from repo root:
+
+```bash
+source .venv/bin/activate
+python -m pytest -q
+./scripts/run_m2_gs_demo.sh
+```
+
+M2 evidence files:
+- `docs/milestones/M2_gs_checklist.md`
+- `docs/validation/M2_gs_convergence_report.md`

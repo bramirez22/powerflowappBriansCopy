@@ -1,11 +1,15 @@
-# Source Structure Suggestion
+# Source Structure
 
-Suggested modules:
+Current implemented modules:
 
-- `parser/` - text input parsing for bus/branch/generator data
-- `models/` - data structures and per-unit normalization
-- `ybus/` - admittance matrix construction
-- `powerflow/gs/` - Gauss-Seidel implementation
+- `models/` - typed network data containers
+- `parser/` - MATPOWER-style input parsing
+- `ybus/` - Y-bus construction with line charging and tap ratio support
+- `powerflow/gs/` - Gauss-Seidel solver (M2)
+- `validation/` - runnable validation/demo scripts
+
+Planned next modules:
+
 - `powerflow/nr/` - Newton-Raphson implementation
 - `shortcircuit/` - fault and symmetrical component analysis
 - `ui/` - web or desktop user interface

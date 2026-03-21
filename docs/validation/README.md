@@ -6,5 +6,6 @@ Store evidence for required demonstrations:
 - Three-phase fault current at selected bus
 - Convergence tolerance evidence (for example 1e-6 p.u.)
 
-Current milestone report:
+Current milestone reports:
 - `M1_validation_report.md`
+- `M2_gs_convergence_report.md`
