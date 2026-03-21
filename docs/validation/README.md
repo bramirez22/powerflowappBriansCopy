@@ -12,3 +12,4 @@ Current milestone reports:
 
 Current generated data:
 - `m2_gs_iteration_history.csv`
+- `m2_gs_convergence.png`

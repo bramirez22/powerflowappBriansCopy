@@ -94,3 +94,14 @@ python -m pytest -q
 M2 evidence files:
 - `docs/milestones/M2_gs_checklist.md`
 - `docs/validation/M2_gs_convergence_report.md`
+
+## M2 Convergence Plot
+
+Generate a PNG convergence figure from the GS iteration-history CSV:
+
+```bash
+./scripts/plot_m2_gs_history.sh
+```
+
+Output:
+- `docs/validation/m2_gs_convergence.png`

@@ -38,6 +38,10 @@ CSV export is generated automatically by the M2 demo script:
 - Output file: `docs/validation/m2_gs_iteration_history.csv`
 - Columns: `iteration,max_voltage_change,max_power_mismatch`
 
+Plot generation is available via:
+- Script: `scripts/plot_m2_gs_history.sh`
+- Output figure: `docs/validation/m2_gs_convergence.png`
+
 This file is plotting-ready for convergence figures in the report/slides.
 
 ## Automated Test Evidence
