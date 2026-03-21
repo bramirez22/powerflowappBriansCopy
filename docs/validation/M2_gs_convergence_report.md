@@ -27,14 +27,18 @@ The solver is implemented in complex form and updates buses by type:
 
 Invalid values are rejected via explicit input validation.
 
-## Iteration History
+## Iteration History and CSV Export
 
 Each iteration stores:
 - iteration number
 - maximum voltage change `max_voltage_change`
 - maximum mismatch `max_power_mismatch`
 
-This history is returned in the solver result and can be used for plotting/reporting.
+CSV export is generated automatically by the M2 demo script:
+- Output file: `docs/validation/m2_gs_iteration_history.csv`
+- Columns: `iteration,max_voltage_change,max_power_mismatch`
+
+This file is plotting-ready for convergence figures in the report/slides.
 
 ## Automated Test Evidence
 
@@ -45,13 +49,11 @@ Command:
 ```
 
 Result:
-- `14 passed`
+- `16 passed`
 
 M2-focused tests:
 - `tests/powerflow/test_gauss_seidel.py`
-  - converges on baseline case
-  - verifies Slack/PV/PQ handling
-  - verifies invalid solver parameter handling
+- `tests/validation/test_m2_history_export.py`
 
 ## IEEE-14 Convergence Demonstration
 
@@ -76,4 +78,4 @@ Sample bus voltages (|V|, angle deg):
 
 ## Conclusion
 
-Milestone 2 requirements are implemented and demonstrated with tests and IEEE-14 convergence evidence.
+Milestone 2 requirements are implemented and demonstrated with tests, IEEE-14 convergence evidence, and plot-ready iteration-history export.

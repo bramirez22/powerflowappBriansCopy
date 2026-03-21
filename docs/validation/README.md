@@ -9,3 +9,6 @@ Store evidence for required demonstrations:
 Current milestone reports:
 - `M1_validation_report.md`
 - `M2_gs_convergence_report.md`
+
+Current generated data:
+- `m2_gs_iteration_history.csv`
